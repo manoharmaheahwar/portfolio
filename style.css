@@ -1,0 +1,933 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+  
+}
+body{
+  background-color: rgb(241, 241, 235);
+}
+
+.nav-bars{
+  height: 10%;
+  width: 100%;
+  position: fixed;
+  background-image: url("https://us.123rf.com/450wm/peshkov/peshkov1506/peshkov150600008/41023430-blank-black-diary-and-accessories.jpg?ver=6");
+  background-size: cover;
+  margin-top: 5px;
+  display: flex;
+  justify-content:space-around;
+}
+
+.nav-bars a h1{
+  color: rgb(215, 232, 247);
+  font-family:'Dancing Script', cursive; 
+  padding-top: 10px;
+  
+}
+
+.nav-bars a{
+  margin: 0 0px 0 0 ;
+}
+
+.nav-bars a h1:hover{
+  color: rgb(79, 228, 228);
+  font-size: 50px;
+  transition: 0.3s;
+}
+
+.all-link-area{
+  width: 50%;
+  height: 100%;
+  padding-top: 18px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 620px){
+  .all-link-area{
+      display: flex;
+      flex-direction: column;
+      float: left;
+      justify-content: none;
+  }
+  .nav-bars{
+      height: 20%;
+      width: 50%;
+  }
+}
+
+.nav-bars .all-link-area p a{
+text-decoration: none;
+color: white;                                     /* rgb(245, 242, 238)*/
+}
+
+   
+.nav-bars .all-link-area  p a:hover {
+  color: rgb(250, 225, 192);
+  font-size: 20px;
+  transition: 0.2s;
+}
+
+
+.section-1{
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://us.123rf.com/450wm/peshkov/peshkov1506/peshkov150600008/41023430-blank-black-diary-and-accessories.jpg?ver=6");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+}
+  
+
+.section-1 .social-site-area{
+  position: fixed;
+}
+.section-1 .social-site-area a{
+  display: flex;
+}
+
+.section-1 .social-site-area a.fa:hover{
+  width: 80px;
+  height: 80px;
+  transition: 0.8s;
+}
+
+.section-1 .social-site-area a.fa-linkedin{
+  padding-right: 20px;
+}
+
+.section-1 .social-site-area a.fa-facebook,a.fa-twitter,a.fa-linkedin,a.fa-whatsapp{
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+}
+
+.fa{
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+.fa-facebook{
+  background: #3B5998;
+  color: white;
+}
+
+.fa-facebook:hover,.fa-twitter:hover,.fa-linkedin:hover{
+  color: white;
+}
+.fa-twitter{
+  background: #55ACEE;
+  color: white;
+}
+.fa-whatsapp{
+  background:rgb(31, 216, 31);
+}
+.fa-linkedin{
+  background: #007bb5;
+  color: white;
+}
+
+
+.display-area{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+}
+
+
+.my-img-area{
+  height: 300px;
+  width: 300px;
+}
+
+@media only screen and (max-width: 250px){
+  .my-img-area{
+      height: 200px;
+      width: 200px;
+      transition: 0.8s;
+  }
+  .section-1 .display-area .name,.section-1 .display-area .role{
+      text-align: center;
+  }
+  .social-site-area{
+      size: 10px;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .display-area{
+      justify-content: flex-end;
+  }
+  .social-site-area{
+      position: absolute;
+      bottom: 0;
+      display: flex;
+  }
+  .certification-size h1{
+      font-size: 4px;
+      transition: 0.8s;
+  }
+  .each-skill{
+      width: 100%;
+  }
+   
+}
+.my-img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.section-1 .display-area .name{
+  font-family: 'Merriweather', serif;
+  margin-top: 2%;
+  
+}
+
+.section-1 .display-area .role{
+  font-size: 23px; 
+  font-family:'Scheherazade New', serif; 
+  padding-left: 10px;
+}
+
+.about-me{
+  height: 250px;
+  width: 100%;
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.qualification{
+  height: 90%;
+  width: 100%;
+  margin-bottom: 2%;
+  display: flex;
+  justify-content: space-around;
+  
+}
+h3{
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+.cart{
+  height: 45vh;
+  width: 20%;
+  background-color: rgb(185, 226, 168);
+  display: flex;
+  border-radius: 50px;
+  
+}
+
+.ssc-border h2,.diploma-border h2,.graduation-border h2{
+  text-align: center; 
+  border-radius: 50px; 
+  color: darkcyan;
+  z-index: -1;
+}
+
+  
+.ssc-border,.diploma-border,.graduation-border{
+  height: 90%;
+  width: 100%;
+  border: 1px solid rgb(104, 155, 27);
+  margin-top: -3%;
+  margin-left: -4%; 
+  border-radius: 10%;
+  padding: 20px 0 0 20px;
+ 
+}
+.ssc,.diploma,.graduation{
+  z-index: -1;
+  margin-top: 2%;   
+  box-shadow: 0 8px 6px -6px black; 
+}
+
+.cart-content{
+  height: 50px;
+  color: rgb(129, 131, 10); 
+  list-style-type: none; 
+  padding-top: 0;
+}
+.graduation-per{
+  padding-top: 20px;
+}
+@media only screen and (max-width: 450px){
+  .qualification{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+  }
+  
+  .cart{
+      width: 35vh;
+      margin-top: 10px;
+  }
+
+  .java-percentage,.html-percentage,.css-percentage,.bootstrap-percentage,.js-percentage,.django-percentage,
+  .empty-per-java,.empty-per-html,.empty-per-css,.empty-per-bootstrap,.empty-per-js,.empty-per-django{
+      margin-top: 9.5%;
+      margin-left: -1px;
+  }
+}
+@media only screen and (max-width: 800px){
+  .qualification{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .cart{
+      width: 45vh;
+      margin-top: 30px;
+      
+  }
+  .java-percentage,.html-percentage,.css-percentage,.bootstrap-percentage,.js-percentage,.django-percentage{
+      
+      margin-top:5.5%;
+      margin-left: -1px;
+  }
+
+}
+
+
+.section-3{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;justify-content: center;
+}
+.certificate-area{
+  height: 80%;
+  width: 80%;
+  margin-top: 5%;
+  border: 5px solid; 
+  background-image:url("https://st2.depositphotos.com/2088859/7500/v/950/depositphotos_75005079-stock-illustration-seamless-grey-small-square-boxes.jpg") ;
+  border-image:  linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5;  
+  align-items: center;
+  z-index: -1;
+  position: relative;
+
+}
+.certification-size,.certificate-area{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+}
+.section-3 .certificate-area .certification-size h1{
+  
+  font-family: 'Playfair Display', serif;
+  font-weight: 800; 
+}
+
+
+.certificate-area p{
+  height: 20%;
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 20%;
+  font-size: 15px; 
+  color: rgb(42, 44, 44); 
+  font-weight: 500;
+}
+
+
+.first-cert,.second-cert{
+  position: absolute;
+  top: 8%;
+  background-color:rgb(230, 150, 150);
+  display: flex;
+  align-items: center;
+}
+
+.third-cert,.fourth-cert{
+  position:absolute;
+  bottom: 8%;
+  background-color:rgb(230, 150, 150);
+  display: flex;
+  align-items: center;
+}
+
+.first-cert,.third-cert{
+  left: 8%;
+}
+
+.second-cert,.fourth-cert{
+  right: 8%;
+} 
+
+@media only screen and (max-width: 800px){
+  .section-3 .certificate-area p{
+      font-size: 10px;
+      transition: 1s;
+  }
+  .java-percentage,.html-percentage,.css-percentage,.bootstrap-percentage,.js-percentage,.django-percentage{
+      
+      margin-top:5.5%;
+      margin-left: -1px;
+  }
+  .certification-size h1{
+      font-size: 20px;
+      transition: 0.8s;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .section-3 .certificate-area p{
+      font-size: 8px;
+      transition: 1s;
+  }
+  .ssc,.diploma,.graduation{
+      height: 45vh;
+  }
+  .section-4 .skills-area .all-skills .each-skill .java span,.section-4 .skills-area .all-skills .each-skill .bootstrap span{
+      font-size: small;
+      transition: 1s;
+  }
+  
+}
+
+
+
+
+.section-4{
+  height: 100%;
+  width: 100%;
+  border: 5px solid orange;
+  border-radius: 20px;
+}
+
+.section-4>img{
+  margin-left: 40%;
+  align-items: center;
+  margin-top: 84px;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0 50px 0;
+  justify-content: space-around;
+}
+
+.skill-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.circular-progress{
+  position: relative;
+  height: 180px;
+  width: 180px;
+  background-color: orange;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  z-index: -1;
+  margin: 20px 25px 0 25px;
+}
+
+.circular-progress:before{
+  content: "";
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.value-container{
+  position: relative;
+  font-size: 50px;
+  font-weight: 500;
+}
+.skillName{
+  font-size: 40px;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 600px){
+  .section-4>img{
+      margin-left: 30%;
+      width: 150px;
+      align-items: center;
+  }
+  .container{
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 50px 0 50px 0;
+      justify-content: space-around;
+  }
+  
+}
+
+
+/* .section-4{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+}
+.skill-img-area{
+  height: 10%;
+  width: 100%;
+  margin-top: 2%;
+}
+.skills-area{
+  height: 90%;
+  width: 100%; 
+  background-color: white;
+}
+
+
+.all-skills{
+  height: 130vh;
+  width: 100%;
+}
+
+.each-skill{
+  height:15% ;
+  width: 97%;
+  padding-left: 10px;
+  display: flex;
+  float: right;
+  justify-content: center;
+}
+
+
+
+.java,.html,.css,.bootstrap,.javascript,.django{
+  height: 100%;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: -1px;
+}
+.java{
+  border: 10px solid rgb(219, 219, 19);
+  color:rgb(219, 219, 19);
+}
+.html{
+  border: 10px solid  green;
+  color: green;
+}
+.css{
+  border: 10px solid  red;
+  color: red;
+}
+.bootstrap{
+  border: 10px solid  darkblue;
+  color: darkblue;
+}
+.javascript{
+  border: 10px solid  orange;
+  color: orange;
+}
+.django{
+  border: 10px solid  greenyellow;
+  color: yellowgreen;
+}
+
+.java-percentage,.html-percentage,.css-percentage,.bootstrap-percentage,.js-percentage,.django-percentage,
+.empty-per-java,.empty-per-html,.empty-per-css,.empty-per-bootstrap,.empty-per-js,.empty-per-django{
+  height: 15%;
+  margin-top:4.5%;
+  margin-left: -1px;
+}
+.skills-area .all-skills .each-skill .java>span,.java>p,.html>span,.html>p,.css>span,.css>p,.django>span,.django>p{
+  font-size: 27px;
+  font-weight: 600;
+  
+}
+.skills-area .all-skills .each-skill .bootstrap>span,.bootstrap>p,.javascript>span,.javascript>p{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.java-percentage{
+  width: 80%;
+  background-color: rgb(219, 219, 19);
+}
+.empty-per-java{
+  width: 10%;
+  border: 1px solid  rgb(219, 219, 19);
+}
+.html-percentage{
+  width: 90%;
+  background-color: green;
+}
+.empty-per-html{
+  width: 5%;
+  border: 1px solid  green;
+}
+.css-percentage{
+  width: 80%;
+  background-color: red;
+}
+.empty-per-css{
+  width: 10%;
+  border: 1px solid  red;
+}
+.bootstrap-percentage{
+  width: 70%;
+  background-color: darkblue;
+}
+.empty-per-bootstrap{
+  width: 20%;
+  border: 1px solid  darkblue;
+}
+.js-percentage{
+  width: 70%;
+  background-color: orange;
+}
+.empty-per-js{
+  width: 20%;
+  border: 1px solid  orange;
+}
+.django-percentage{
+  width: 60%;
+  background-color: greenyellow;
+}
+.empty-per-django{
+  width: 30%;
+  border: 1px solid  greenyellow;
+}
+
+@media only screen and (max-width: 2800px){
+  .java-percentage,.html-percentage,.css-percentage,.bootstrap-percentage,.js-percentage,.django-percentage,
+  .empty-per-java,.empty-per-html,.empty-per-css,.empty-per-bootstrap,.empty-per-js,.empty-per-django{
+      margin-top: 5.5%;
+      margin-left: -1px;
+  }
+
+  .each-skill{
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      
+  }
+  
+} 
+
+@media only screen and (max-width: 1800px){
+  .java-percentage,.html-percentage,.css-percentage,.bootstrap-percentage,.js-percentage,.django-percentage,
+  .empty-per-java,.empty-per-html,.empty-per-css,.empty-per-bootstrap,.empty-per-js,.empty-per-django{
+      margin-top: 4.9%;
+      margin-left: -1px;
+  }
+
+  .each-skill{
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      
+  }
+  
+}
+
+
+@media only screen and (max-width: 1500px){
+  .java-percentage,.html-percentage,.css-percentage,.bootstrap-percentage,.js-percentage,.django-percentage,
+  .empty-per-java,.empty-per-html,.empty-per-css,.empty-per-bootstrap,.empty-per-js,.empty-per-django{
+      margin-top: 9.9%;
+      margin-left: -1px;
+  }
+
+  .each-skill{
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      
+  }
+  
+}
+
+@media only screen and (max-width: 1250px){
+  .java-percentage,.html-percentage,.css-percentage,.bootstrap-percentage,.js-percentage,.django-percentage,
+  .empty-per-java,.empty-per-html,.empty-per-css,.empty-per-bootstrap,.empty-per-js,.empty-per-django{
+      margin-top: 4.9%;
+      margin-left: -1px;
+  }
+   
+
+  .section-4 .skills-area .all-skills .each-skill .java p,
+   .each-skill .html span,.section-4 .skills-area .all-skills .each-skill .html p,
+   .each-skill .css span,.section-4 .skills-area .all-skills .each-skill .css p,
+   .each-skill .bootstrap span,.section-4 .skills-area .all-skills .each-skill .bootstrap p,
+   .each-skill .javascript span,.section-4 .skills-area .all-skills .each-skill .javascript p,
+   .each-skill .django span,.section-4 .skills-area .all-skills .each-skill .django p{
+      font-size: 15px ;
+      transition: 1s;
+  }
+
+  .section-4 .skills-area .all-skills .each-skill .java span,.section-4 .skills-area .all-skills .each-skill .bootstrap span{
+      font-size: small;
+      transition: 1s;
+  }
+  
+}
+
+@media only screen and (max-width: 1000px){
+  .java-percentage,.html-percentage,.css-percentage,.bootstrap-percentage,.js-percentage,.django-percentage,
+  .empty-per-java,.empty-per-html,.empty-per-css,.empty-per-bootstrap,.empty-per-js,.empty-per-django{
+      margin-top: 6.5%;
+      margin-left: -1px;
+  }
+  
+
+  .java-percentage{
+      width: 70%;
+      background-color: rgb(219, 219, 19);
+  }
+  .empty-per-java{
+      width: 5%;
+      border: 1px solid  rgb(219, 219, 19);
+  }
+  .html-percentage{
+      width: 70%;
+      background-color: green;
+  }
+  .empty-per-html{
+      width: 5%;
+      border: 1px solid  green;
+  }
+  .css-percentage{
+      width: 70%;
+      background-color: red;
+  }
+  .empty-per-css{
+      width: 5%;
+      border: 1px solid  red;
+  }
+  .bootstrap-percentage{
+      width: 65%;
+      background-color: darkblue;
+  }
+  .empty-per-bootstrap{
+      width: 10%;
+      border: 1px solid  darkblue;
+  }
+  .js-percentage{
+      width: 65%;
+      background-color: orange;
+  }
+  .empty-per-js{
+      width: 10%;
+      border: 1px solid  orange;
+  }
+  .django-percentage{
+      width: 60%;
+      background-color: greenyellow;
+  }
+  .empty-per-django{
+      width: 15%;
+      border: 1px solid  greenyellow;
+  }
+
+  .each-skill{
+      display: flex;
+      justify-content: center;
+      width: 90%;
+      
+  }
+
+   .section-4 .skills-area .all-skills .each-skill .java p,
+   .each-skill .html span,.section-4 .skills-area .all-skills .each-skill .html p,
+   .each-skill .css span,.section-4 .skills-area .all-skills .each-skill .css p,
+   .each-skill .bootstrap span,.section-4 .skills-area .all-skills .each-skill .bootstrap p,
+   .each-skill .javascript span,.section-4 .skills-area .all-skills .each-skill .javascript p,
+   .each-skill .django span,.section-4 .skills-area .all-skills .each-skill .django p{
+      font-size: 15px ;
+      transition: 1s;
+  }
+  .section-4 .skills-area .all-skills .each-skill .java span,.section-4 .skills-area .all-skills .each-skill .bootstrap span{
+      font-size: small;
+      transition: 1s;
+  }
+
+  .each-skill .bootstrap span{
+      font-size: 5px ;
+      transition: 1s;
+  }
+
+  .graduation-per{
+      padding-top: 40px;
+  }
+}
+
+
+@media only screen and (max-width: 800px){
+  .skills-area .all-skills .each-skill .bootstrap span{
+      font-size: 20px ;
+      transition: 1s;
+  }
+
+  .java-percentage,.html-percentage,.css-percentage,.bootstrap-percentage,.js-percentage,.django-percentage,
+  .empty-per-java,.empty-per-html,.empty-per-css,.empty-per-bootstrap,.empty-per-js,.empty-per-django{
+      margin-top: 7.5%;
+      margin-left: -1px;
+  }
+} */
+
+
+.section-5,.section-6{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-5{
+  height: 100vh;
+  background-color: rgb(211, 223, 155);
+  margin-top: 40px;
+}
+
+.section-5 h1{
+  text-align: center;
+  color: antiquewhite;
+  display: inline-block;
+  letter-spacing: 10px;
+  border-radius: 30%;
+  padding: 10px;
+  margin-top: 40px;
+  background-color: rgb(4, 4, 107);
+}
+
+.project-area{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  padding-top: 10px; 
+  z-index: -1;
+  margin-top: 2%;
+}
+.card-text{
+  border: 2px solid yellow;
+  height: 20px;
+}
+
+.project-area .second-card h3{
+  margin-top: 32px;
+}
+
+.card-size{
+  height: 500px;
+  width: 150x;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+
+.section-6 h1{
+  text-align: center;
+  color: antiquewhite;
+  display: inline-block;
+  letter-spacing: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5%;
+  background-color: rgb(70, 155, 126);
+
+}
+.hobbies-area{
+  height: 40vh;
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 650px) {
+  .hobbies-area{
+      flex-direction: column;
+  }
+  .graduation-per{
+      padding-top: 30px;
+  }
+  .skills-area .all-skills .each-skill .bootstrap>span{
+      font-size: 8px;
+
+  }
+}
+
+.section-6 .hobbies-area .web-Designing h2,.readingBooks h2,.driving h2,.helping h2{
+  display: inline;
+  border: 1px solid rgb(4, 4, 58);
+  border-radius: 20px;
+  padding: 10px;
+  font-family: 'Playfair Display', serif;;
+}
+.section-6 .hobbies-area .web-Designing h2{
+  
+  background-color: rgb(205, 146, 228);
+}
+.section-6 .hobbies-area .driving h2{
+  background-color: antiquewhite;
+}
+.section-6 .hobbies-area .readingBooks h2{
+  background-color: rgb(236, 236, 84);
+}
+.section-6 .hobbies-area .helping h2{
+  background-color: rgb(81, 211, 81);
+}
+
+
+.footer{
+  height: 20vh;
+  width: 100%;
+  position:sticky;
+  background-color: rgba(7, 7, 39, 0.815);
+}
+.footer h2{
+  color: white;
+  text-align: center;
+} 
+.footer .contact-details a,p{
+  color: antiquewhite;
+}
+.footer .contact-details a:hover{
+  color: rgb(212, 143, 53);
+}
+
+.contact-details{
+  font-size: 20px;
+  display:flex ;
+  justify-content: center;
+  justify-content: space-around;
+  margin-top: 40px;
+  
+}
